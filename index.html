@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الماسة للتكييف وفلاتر المياه</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f2f2f2;
+text-align:center;
+}
+
+header{
+background:#0077b6;
+color:white;
+padding:20px;
+font-size:24px;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:white;
+margin:15px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+button{
+background:#0077b6;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+font-size:16px;
+margin:5px;
+}
+
+button:hover{
+background:#023e8a;
+}
+
+footer{
+background:#333;
+color:white;
+padding:15px;
+margin-top:20px;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+الماسة للتكييف وفلاتر المياه
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>من نحن</h2>
+<p>
+شركة الماسة متخصصة في توريد وتركيب جميع ماركات التكييف
+وفلاتر المياه مع أفضل خدمات الصيانة.
+</p>
+<p>
+العنوان: ميت غمر - الدقهلية
+</p>
+</div>
+
+<div class="card">
+<h2>خدماتنا</h2>
+<p>✔ توريد وتركيب جميع ماركات التكييف</p>
+<p>✔ صيانة دورية</p>
+<p>✔ صيانة الأعطال</p>
+<p>✔ تركيب وصيانة فلاتر المياه</p>
+</div>
+
+<div class="card">
+<h2>اتصل بنا</h2>
+
+<p>📞 01208768395</p>
+<p>📞 01508346417</p>
+
+<button onclick="call()">اتصل الآن</button>
+
+<button class="whatsapp" onclick="whatsapp()">واتساب</button>
+
+</div>
+
+</div>
+
+<footer>
+جميع الحقوق محفوظة © شركة الماسة للتكييف
+</footer>
+
+<script>
+
+function call(){
+window.location.href="tel:01208768395";
+}
+
+function whatsapp(){
+window.open("https://wa.me/201508346417");
+}
+
+</script>
+
+</body>
+</html>
