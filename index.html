@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
 
 <meta charset="UTF-8">
@@ -10,7 +11,7 @@
 <style>
 
 body{
-font-family: Arial;
+font-family:Arial;
 margin:0;
 background:#f2f2f2;
 direction:rtl;
@@ -42,6 +43,16 @@ border:none;
 border-radius:8px;
 font-size:16px;
 cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .call{
@@ -64,11 +75,15 @@ background:#1877f2;
 color:white;
 }
 
-img{
-width:90%;
-max-width:350px;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
 border-radius:10px;
-margin:10px;
 }
 
 footer{
@@ -111,9 +126,15 @@ margin-top:20px;
 
 <h2>بعض من أعمالنا</h2>
 
-<img src="https://i.imgur.com/DvpvklR.png">
-<img src="https://i.imgur.com/8Km9tLL.jpg">
-<img src="https://i.imgur.com/5tj6S7Ol.jpg">
+<div class="gallery">
+
+<img src="ac1.jpg">
+<img src="filter.jpg">
+<img src="ac2.jpg">
+<img src="ac3.jpg">
+<img src="ac4.jpg">
+
+</div>
 
 </div>
 
@@ -126,7 +147,7 @@ margin-top:20px;
 
 <iframe
 src="https://maps.google.com/maps?q=ميت%20غمر&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%" height="300" style="border:0;">
+width="100%" height="300" style="border:0;border-radius:10px;">
 </iframe>
 
 </div>
@@ -139,32 +160,28 @@ width="100%" height="300" style="border:0;">
 <p>📞 01508346417</p>
 <p>📞 01208768395</p>
 
-<br>
+<div class="buttons">
 
 <a href="tel:01508346417">
 <button class="call">📞 اتصال مباشر</button>
 </a>
 
-<a href="https://wa.me/201208768395">
+<a href="https://wa.me/201508346417">
 <button class="whatsapp">💬 واتساب</button>
 </a>
 
-<a href="https://wa.me/201208768395?text=اريد%20طلب%20صيانة">
+<a href="https://wa.me/201508346417?text=اريد%20طلب%20صيانة">
 <button class="order">🛠 طلب صيانة</button>
 </a>
 
-<br><br>
-
 <a href="https://www.facebook.com/share/19u7hgHwqv/" target="_blank">
-
 <button class="facebook">
-
 <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="20">
 تابعنا على فيسبوك
-
 </button>
-
 </a>
+
+</div>
 
 </div>
 
@@ -179,4 +196,5 @@ width="100%" height="300" style="border:0;">
 </footer>
 
 </body>
+
 </html>
