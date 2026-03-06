@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>الماسة للتكييف وفلاتر المياه</title>
 
 <style>
@@ -11,21 +13,21 @@ body{
 font-family: Arial;
 margin:0;
 background:#f2f2f2;
+direction:rtl;
 text-align:center;
 }
 
 header{
-background:#0077b6;
+background:#0077cc;
 color:white;
-padding:20px;
-font-size:24px;
+padding:25px;
 }
 
-.container{
-padding:20px;
+h1{
+margin:0;
 }
 
-.card{
+.section{
 background:white;
 margin:15px;
 padding:20px;
@@ -34,89 +36,147 @@ box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 button{
-background:#0077b6;
-color:white;
+padding:12px 20px;
+margin:8px;
 border:none;
-padding:10px 20px;
-border-radius:6px;
+border-radius:8px;
 font-size:16px;
-margin:5px;
+cursor:pointer;
 }
 
-button:hover{
-background:#023e8a;
+.call{
+background:green;
+color:white;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.order{
+background:#ff9800;
+color:white;
+}
+
+.facebook{
+background:#1877f2;
+color:white;
+}
+
+img{
+width:90%;
+max-width:350px;
+border-radius:10px;
+margin:10px;
 }
 
 footer{
-background:#333;
+background:#222;
 color:white;
 padding:15px;
 margin-top:20px;
 }
 
-.whatsapp{
-background:#25D366;
-}
-
 </style>
+
 </head>
 
 <body>
 
 <header>
-الماسة للتكييف وفلاتر المياه
+
+<h1>الماسة للتكييف وفلاتر المياه</h1>
+
+<p>
+توريد وتركيب وصيانة جميع ماركات التكييف وفلاتر المياه
+</p>
+
 </header>
 
-<div class="container">
 
-<div class="card">
-<h2>من نحن</h2>
-<p>
-شركة الماسة متخصصة في توريد وتركيب جميع ماركات التكييف
-وفلاتر المياه مع أفضل خدمات الصيانة.
-</p>
-<p>
-العنوان: ميت غمر - الدقهلية
-</p>
-</div>
+<div class="section">
 
-<div class="card">
 <h2>خدماتنا</h2>
+
 <p>✔ توريد وتركيب جميع ماركات التكييف</p>
-<p>✔ صيانة دورية</p>
+<p>✔ صيانة دورية للتكييف</p>
 <p>✔ صيانة الأعطال</p>
 <p>✔ تركيب وصيانة فلاتر المياه</p>
+
 </div>
 
-<div class="card">
-<h2>اتصل بنا</h2>
 
-<p>📞 01208768395</p>
+<div class="section">
+
+<h2>بعض من أعمالنا</h2>
+
+<img src="https://i.imgur.com/DvpvklR.png">
+<img src="https://i.imgur.com/8Km9tLL.jpg">
+<img src="https://i.imgur.com/5tj6S7Ol.jpg">
+
+</div>
+
+
+<div class="section">
+
+<h2>العنوان</h2>
+
+<p>ميت غمر - الدقهلية</p>
+
+<iframe
+src="https://maps.google.com/maps?q=ميت%20غمر&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300" style="border:0;">
+</iframe>
+
+</div>
+
+
+<div class="section">
+
+<h2>تواصل معنا</h2>
+
 <p>📞 01508346417</p>
+<p>📞 01208768395</p>
 
-<button onclick="call()">اتصل الآن</button>
+<br>
 
-<button class="whatsapp" onclick="whatsapp()">واتساب</button>
+<a href="tel:01508346417">
+<button class="call">📞 اتصال مباشر</button>
+</a>
+
+<a href="https://wa.me/201208768395">
+<button class="whatsapp">💬 واتساب</button>
+</a>
+
+<a href="https://wa.me/201208768395?text=اريد%20طلب%20صيانة">
+<button class="order">🛠 طلب صيانة</button>
+</a>
+
+<br><br>
+
+<a href="https://www.facebook.com/share/19u7hgHwqv/" target="_blank">
+
+<button class="facebook">
+
+<img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="20">
+تابعنا على فيسبوك
+
+</button>
+
+</a>
 
 </div>
 
-</div>
 
 <footer>
-جميع الحقوق محفوظة © شركة الماسة للتكييف
+
+<p>
+© 2026 جميع الحقوق محفوظة  
+الماسة للتكييف وفلاتر المياه
+</p>
+
 </footer>
-
-<script>
-
-function call(){
-window.location.href="tel:01208768395";
-}
-
-function whatsapp(){
-window.open("https://wa.me/201508346417");
-}
-
-</script>
 
 </body>
 </html>
